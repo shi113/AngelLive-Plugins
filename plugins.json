@@ -1,23 +1,23 @@
 {
   "apiVersion": 1,
-  "generatedAt": "2026-11-18T07:00:00Z",
+  "generatedAt": "2026-11-18T07:10:00Z",
   "plugins": [
     {
       "pluginId": "community.stripchat",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "platform": "stripchat",
       "platformName": "Stripchat",
       "platformDescription": "浏览公开主播、搜索主播并查看公开直播资料与状态。",
       "changelog": [
-        "修复安装失败：zip 改为根目录扁平结构（manifest/index 直接在 zip 根）。",
-        "保留主播列表、搜索、详情和直播状态功能。",
-        "收藏由 Angel Live 宿主管理；播放暂不提供。"
+        "修复房间列表为空：兼容 v2 blocks 结构，并优先使用 /api/front/models 扁平列表。",
+        "修复封面图相对路径，补齐绝对 CDN 地址。",
+        "搜索失败时回退到用户名详情解析。"
       ],
-      "sha256": "860c699507f4e51f8bacbc285f1bcd78b44df88692b8ecea119ea37056551c5b",
-      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.2.zip",
+      "sha256": "caede88481d06f92adc0d15e2d496c7ba57232d816b2886fb0ff5316b578a3be",
+      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.3.zip",
       "zipURLs": [
-        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.2.zip",
-        "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.2.zip"
+        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.3.zip",
+        "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.3.zip"
       ]
     }
   ]
