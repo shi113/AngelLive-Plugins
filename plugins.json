@@ -1,23 +1,23 @@
 {
   "apiVersion": 1,
-  "generatedAt": "2026-11-18T07:10:00Z",
+  "generatedAt": "2026-11-18T07:45:00Z",
   "plugins": [
     {
       "pluginId": "community.stripchat",
-      "version": "0.2.3",
+      "version": "0.3.0",
       "platform": "stripchat",
       "platformName": "Stripchat",
-      "platformDescription": "浏览公开主播、搜索主播并查看公开直播资料与状态。",
+      "platformDescription": "浏览公开主播、搜索、查看详情，并尝试 HLS 播放。",
       "changelog": [
-        "修复房间列表为空：兼容 v2 blocks 结构，并优先使用 /api/front/models 扁平列表。",
-        "修复封面图相对路径，补齐绝对 CDN 地址。",
-        "搜索失败时回退到用户名详情解析。"
+        "新增播放：基于 streamName 生成 edge-hls doppiocdn HLS 地址，支持多清晰度。",
+        "未开播/非公开状态会明确报错。",
+        "保留列表、搜索、详情与直播状态。"
       ],
-      "sha256": "caede88481d06f92adc0d15e2d496c7ba57232d816b2886fb0ff5316b578a3be",
-      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.3.zip",
+      "sha256": "90f3f66e26f1e0ad52aca7b9cfafedbee12ea8318f2356cadfd054ae729a1148",
+      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.3.0.zip",
       "zipURLs": [
-        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.3.zip",
-        "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.3.zip"
+        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.3.0.zip",
+        "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.3.0.zip"
       ]
     }
   ]
