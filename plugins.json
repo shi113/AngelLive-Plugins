@@ -4,17 +4,17 @@
   "plugins": [
     {
       "pluginId": "community.stripchat",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "changelog": [
-        "重写 Stripchat 接口适配，使用当前用户 ID 查询流程。",
-        "新增主播列表、搜索、详情和直播状态。",
+        "修复 Angel Live 分类数据结构，补齐 icon 与 subList 必填字段。",
+        "保留主播列表、搜索、详情和直播状态功能。",
         "收藏由 Angel Live 宿主管理；播放暂不提供。"
       ],
       "platform": "stripchat",
       "platformName": "Stripchat",
       "platformDescription": "浏览公开主播、搜索主播并查看公开直播资料与状态。",
-      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.0.zip",
-      "sha256": "a42c3982d46983b6290a3171354b42c043db340c9e4a6b64f60c162d3f7f2649"
+      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Plugins/main/stripchat-angellive-plugin-0.2.1.zip",
+      "sha256": "77bb7da92f3d1c759b065f9a99d4960236efc0a6ab0536823dad92307e138630"
     }
   ]
 }
