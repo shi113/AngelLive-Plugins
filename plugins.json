@@ -4,6 +4,9 @@
   "plugins": [
     {
       "changelog": [
+        "新增 Stripchat 官方风格品牌图标资源，适配 AngelLive iOS 配置卡片与平台列表。",
+        "补充 tv、live_card、pad_live_card 与 mini_live_card 图标资源命名，保持插件 ID community.stripchat 不变。",
+        "本版本仅增加图标资源，不修改主播列表、搜索、详情、收藏与 HLS 播放逻辑。",
         "新增 refreshPlayback：播放地址失效时重新取流，并优先保持原先选择的线路与清晰度。",
         "播放清单探测采用首个有效 CDN 返回策略，不再等待同组最慢线路完成。",
         "代理签名清单增加过期时间校验，并关闭签名响应缓存，减少拿到过期播放地址的概率。",
@@ -16,12 +19,12 @@
       "platformDescription": "浏览公开主播、搜索、查看详情，并尝试 HLS 播放。",
       "platformName": "Stripchat",
       "pluginId": "community.stripchat",
-      "sha256": "7bcaca290e95c3b5306b553b9d3e66b52e42bc6949f51ebf2dcd4560c3520329",
-      "version": "0.4.0",
-      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.0.zip",
+      "sha256": "c9968ea34c89bd1da5ef665747eb42d30e4faa15c3e7c5b093636fae3a7b6fc8",
+      "version": "0.4.1",
+      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.1.zip",
       "zipURLs": [
-        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.0.zip",
-        "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.0.zip"
+        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.1.zip",
+        "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.1.zip"
       ]
     }
   ]
