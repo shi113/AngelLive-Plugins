@@ -1,2 +1,2 @@
-# AngelLive-Plugins
-Angel Live plugins
+# Stripchat
+一个在AngelLive上播放Stripchat直播的插件
