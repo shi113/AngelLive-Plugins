@@ -4,22 +4,24 @@
   "plugins": [
     {
       "changelog": [
-        "修复直连 HLS master 清单中相对分片/子清单路径未按源地址解析的问题。",
-        "代理清晰度去重并按分辨率降序排列，避免代理返回顺序变化导致自动档误选低画质。",
-        "直连回退改为同组 CDN 并发探测，避免多个失效地址串行等待造成长时间转圈；先探测 auto 清单，再回退标准 master。",
-        "缩短直连清单探测超时，并兼容带 BOM 或前置空白的 HLS 清单。",
-        "补充字符串形式未开播状态判断；保持宿主 LiveQualityModel 与 m3u8 输出结构不变。"
+        "新增 refreshPlayback：播放地址失效时重新取流，并优先保持原先选择的线路与清晰度。",
+        "播放清单探测采用首个有效 CDN 返回策略，不再等待同组最慢线路完成。",
+        "代理签名清单增加过期时间校验，并关闭签名响应缓存，减少拿到过期播放地址的概率。",
+        "代理清晰度按分辨率排序并去重，同一分辨率只保留一个有效地址。",
+        "直连 HLS 探测超时缩短至 4.5 秒；代理清单请求超时缩短至 4 秒。",
+        "同一主播的并发播放请求共享一次取流任务，避免重复请求解析代理和 CDN。",
+        "增强 Master Playlist 行解析与子清单 URL 去重；保持 AngelLive LiveQualityModel 输出结构不变。"
       ],
       "platform": "stripchat",
       "platformDescription": "浏览公开主播、搜索、查看详情，并尝试 HLS 播放。",
       "platformName": "Stripchat",
       "pluginId": "community.stripchat",
-      "sha256": "2d5409dcc244f711a09626bf8a37fa7b14a2a8a5476016b385ff74b8e67e79bf",
-      "version": "0.3.4",
-      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.3.4.zip",
+      "sha256": "7bcaca290e95c3b5306b553b9d3e66b52e42bc6949f51ebf2dcd4560c3520329",
+      "version": "0.4.0",
+      "zipURL": "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.0.zip",
       "zipURLs": [
-        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.3.4.zip",
-        "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.3.4.zip"
+        "https://ghfast.top/https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.0.zip",
+        "https://raw.githubusercontent.com/shi113/AngelLive-Stripchat/main/stripchat-angellive-plugin-0.4.0.zip"
       ]
     }
   ]
