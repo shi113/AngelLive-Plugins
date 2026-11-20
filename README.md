@@ -1,2 +1,2 @@
-# Stripchat
+# AngelLive-Stripchat
 一个在AngelLive上播放Stripchat直播的插件
